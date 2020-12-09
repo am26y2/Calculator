@@ -11,7 +11,7 @@ function App() {
     let result;
     try {
       result = evaluate(expression);
-      setExpression(result.toString());
+      setExpression(+result.toFixed(3).toString());
     } catch (err) {
       setExpression("Invalid Exprssion!");
       setTimeout(() => {
